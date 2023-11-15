@@ -7,6 +7,7 @@ const app = express();
 let body;
 
 app.use(express.json());
+app.use(express.static('dist'));
 app.use(cors());
 
 let persons = [
